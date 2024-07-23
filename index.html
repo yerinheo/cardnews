@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card news</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="./img/favicon2.png" type="image/x-icon">
+</head>
+<style>
+    *{
+        margin: 0; padding: 0;
+    }
+    img, 
+    video, 
+    iframe {
+        vertical-align: middle;
+    }
+    body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+    }
+    .fixed_box{position:fixed;
+				bottom:20px;
+				right:30px;
+				width:40px;}
+    #cardnews_box {
+        margin-top:  150px;
+    }
+    .cardnews {
+        width: 620px;
+        height: 620px;
+    }
+    .cardnews img {
+        width: 100%;
+    }
+</style>
+<body>
+    <div id="cardnews_box">
+    <!-- Swiper -->
+    <div class="swiper cardnews">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./img/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/5.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/6.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/7.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+            var swiper = new Swiper(".cardnews", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+    });
+    </script>
+</body>
+
+</html>
